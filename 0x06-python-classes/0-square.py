@@ -3,4 +3,5 @@
 
 
 class Square:
+    """This is an empty class called square"""
     pass
