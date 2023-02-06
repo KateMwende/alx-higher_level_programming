@@ -1,0 +1,20 @@
+==================
+1-my_list subclass
+==================
+
+This subclass inherits the list class. The function print_sorted
+prints a list of ints in ascending order
+
+Import the function:
+  >>> MyList = __import__('1-my_list').MyList
+
+If a number of integers are passed through:
+  >>> my_list = MyList()
+  >>> my_list.append(1)
+  >>> my_list.append(4)
+  >>> my_list.append(2)
+  >>> my_list.append(3)
+  >>> my_list.append(5)
+  >>> my_list.print_sorted()
+  [1, 2, 3, 4, 5]
+
