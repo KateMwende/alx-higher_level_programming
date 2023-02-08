@@ -10,7 +10,7 @@ class BaseGeometry:
     pass
 
     def area(self):
-        """Function that calculates the area of a shapre
+        """Function that calculates the area of a shape
         """
 
         raise Exception("area() is not implemented")
