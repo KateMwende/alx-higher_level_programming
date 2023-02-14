@@ -6,8 +6,8 @@ import json
 import sys
 import os
 
-save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 filename = "add_item.json"
 exists = os.path.isfile(filename)
@@ -18,7 +18,7 @@ else:
     my_list = []
 
 for arg in sys.argv:
-    if arg == "./9-add_item.py":
+    if arg == "./7-add_item.py":
         continue
     my_list.append(arg)
 
