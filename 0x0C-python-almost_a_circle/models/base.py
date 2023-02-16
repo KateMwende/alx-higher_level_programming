@@ -1,4 +1,4 @@
-#!/usr/bin/pyhoon3
+#!/usr/bin/python3
 """Base class module"""
 
 
