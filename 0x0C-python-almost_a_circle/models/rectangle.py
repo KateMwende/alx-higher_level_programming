@@ -82,3 +82,9 @@ class Rectangle(Base):
             for col in range(self.__width):
                 print("#", end="")
             print("")
+
+    def __str__(self):
+        """An update of str method"""
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
+                                                        self.__y, self.__width,
+                                                        self.__height))
