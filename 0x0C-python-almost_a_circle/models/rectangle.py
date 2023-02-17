@@ -113,3 +113,9 @@ class Rectangle(Base):
                     if key == attrs[attr]:
                         setattr(self, attrs[attr], val)
                         break
+
+    def to_dictionary(self):
+        """Dictionary repr of a rectangle"""
+
+        return ["id": self.id, "width": self.width, "height": self.height,
+                "x": self.x, "y": self.y]
