@@ -28,10 +28,5 @@ class Square(Rectangle):
         Args:
             value: value for size
         """
-
-        if type(value) is not int:
-            raise TypeError("width must be an integer")
-        if value <= 0:
-            raise ValueError("width must be > 0")
         self.weight = value
         self.height = value
