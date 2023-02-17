@@ -55,6 +55,7 @@ class Square(Rectangle):
                     if key == attrs[attr]:
                         setattr(self, attrs[attr], val)
                         break
+
     def to_dictionary(self):
         """Dictionary repr of a rectangle"""
 
