@@ -5,7 +5,7 @@ if (isNaN(i)) {
   console.log('Missing number of occurrence');
 } else {
   while (i > 0) {
-	  console.log('C is fun');
-	  i--;
+    console.log('C is fun');
+    i--;
   }
 }
