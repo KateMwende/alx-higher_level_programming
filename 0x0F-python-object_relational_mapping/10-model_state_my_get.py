@@ -18,7 +18,7 @@ if __name__ == '__main__':
     search = sys.argv[4]
 
     state = session.query(State)
-    if (search == state.name):
+    if (search == State.name):
         print("{}".format(state.id))
     else:
         print('Not found')
