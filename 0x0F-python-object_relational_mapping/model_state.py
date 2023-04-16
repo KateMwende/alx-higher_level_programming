@@ -8,7 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 
-class states(Base):
+class State(Base):
     """Defines a class state to link to a table"""
     __tablename__ = 'states'
     id = Column(Integer, unique=True, nullable=False, primary key=True)
