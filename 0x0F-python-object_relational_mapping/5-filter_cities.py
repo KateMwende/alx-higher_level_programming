@@ -14,4 +14,4 @@ if __name__ == "__main__":
                  ON cities.states_id=states.id\
                  WHERE states.name=sys.argv[4]")
     cities = cur.fetchall()
-    print(', '.join(city[1] for city in cities))
+    print(', '.join([city[1] for city in cities]))
