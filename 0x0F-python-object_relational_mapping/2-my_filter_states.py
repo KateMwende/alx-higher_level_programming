@@ -13,7 +13,7 @@ if __name__ == "__main__":
     search=sys.argv[4]
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE states.name = '{}'".format(search))
-    state = cur.fetchall()
+    states = cur.fetchall()
     for state in states:
-        if search  == state:
+        if search  == state[1]:
             print(state)
