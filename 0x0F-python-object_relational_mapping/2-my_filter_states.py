@@ -14,5 +14,5 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states")
     state = cur.fetchall()
     for state in states:
-        if sys.argv[4] == state:
+        if format(search)  == state:
             print(state)
