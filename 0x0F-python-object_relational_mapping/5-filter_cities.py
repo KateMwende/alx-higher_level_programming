@@ -12,6 +12,6 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3])
     cur.execute("SELECT cities.name FROM cities JOIN states\
                  ON cities.states_id=states.id\
-                 WHERE states.name=sys.argv[4]")
+                 WHERE states.name="{}"".format(sys.argv[4]))
     cities = cur.fetchall()
     print(', '.join([city[1] for city in cities]))
