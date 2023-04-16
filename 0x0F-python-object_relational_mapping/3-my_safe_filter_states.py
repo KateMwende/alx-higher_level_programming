@@ -13,7 +13,7 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3])
     search = sys.argv[4]
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE states.name = '{}'".format(search))
+    cur.execute("SELECT * FROM states")
     states = cur.fetchall()
     for state in states:
         if search == state[1]:
