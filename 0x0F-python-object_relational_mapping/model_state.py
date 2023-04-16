@@ -9,5 +9,6 @@ Base = declarative_base()
 
 class states(Base):
     """Defines a class state to link to a table"""
+    __tablename__ = 'states'
     id = Column(Integer, unique=True, nullable=False, primary key=true)
     name = Column(String(128), nullable=False)
