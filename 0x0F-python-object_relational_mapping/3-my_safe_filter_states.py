@@ -18,4 +18,3 @@ if __name__ == "__main__":
     for state in states:
         if search == state[1]:
             print(state)
-
