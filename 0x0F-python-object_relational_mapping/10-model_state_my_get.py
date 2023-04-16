@@ -15,10 +15,9 @@ if __name__ == '__main__':
                            format(sys.argv[1], sys.argv[2], sys.argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    search = sys.argv[4]
 
     state = session.query(State).filter(State.name == sys.argv[4])
-    if search:
+    if state:
         print("{}".format(state.id))
     else:
         print('Not found')
