@@ -15,4 +15,4 @@ if __name__ == "__main__":
                  ON cities.states_id=states.id")
     cities = cur.fetchall()
     for city in cities:
-        print(', '.join(city))
+        print(', '.join(city[1]))
