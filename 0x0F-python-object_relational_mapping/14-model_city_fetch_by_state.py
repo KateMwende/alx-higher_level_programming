@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-script that lists all State objects from the database hbtn_0e_6_usa
+prints all City objects from the database hbtn_0e_14_usa
 """
 
 import sys
@@ -18,4 +18,4 @@ if __name__ == '__main__':
     p = session.query(City, State).order_by(City.state.id=State.id).all()
 
     for city, state in p:
-        print("{}: {} {}".format(state.name, city.id, city.name))
+        print("{}: ({}) {}".format(state.name, city.id, city.name))
