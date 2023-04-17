@@ -18,4 +18,4 @@ if __name__ == '__main__':
     stateUpdate = session.query(State)
     if 'a' in stateUpdate.name:
         session.delete(stateUpdate)
-        session.commit()
+    session.commit()
