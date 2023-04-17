@@ -15,4 +15,4 @@ class City(Base):
     __table__ = 'cities'
     id = Column(Integer, unique=True, nullable=False, primary_key=True)
     name = Column(String(128))
-    state_id = Column(Integer, nullable=False, Foreignkey('state.id'))
+    state_id = Column(Integer, nullable=False, Foreignkey('states.id'))
