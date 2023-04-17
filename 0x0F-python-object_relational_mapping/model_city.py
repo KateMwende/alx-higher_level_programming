@@ -12,7 +12,7 @@ class City(Base):
     """
     City class that inherits from Base of model_state
     """
-    __table__ = 'cities'
+    __tablename__ = 'cities'
     id = Column(Integer, unique=True, nullable=False, primary_key=True)
     name = Column(String(128))
     state_id = Column(Integer, nullable=False, ForeignKey('states.id'))
