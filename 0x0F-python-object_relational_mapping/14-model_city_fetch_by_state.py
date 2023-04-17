@@ -7,7 +7,7 @@ import sys
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from model_city import City
+from model_city import Base, City
 
 if __name__ == '__main__':
     engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}".
@@ -15,7 +15,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    p = session.query(City, State).filter(City.state.id=State.id).all()
+    p = session.query(City, State).filter(City.state_id=State.id).all()
 
     for city, state in p:
         print("{}: ({}) {}".format(state.name, city.id, city.name))
