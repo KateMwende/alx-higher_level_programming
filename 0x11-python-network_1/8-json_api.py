@@ -10,7 +10,7 @@ import requests
 if __name__ == "__main__":
     url = "http://0.0.0.0:5000/search_user"
     q = sys.argv[1] if len(sys.argv) > 1 else ""
-    response = requests.response(url, data={"q": q})
+    response = requests.post(url, data={"q": q})
     try:
         json_data = response.json()
         if json_data:
