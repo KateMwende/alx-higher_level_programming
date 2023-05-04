@@ -14,6 +14,6 @@ if __name__ == "__main__":
     response = requests.get(url, auth=(username, password))
     r = response.json()
     try:
-        print(j.get("id"))
+        print(r.get("id"))
     except Exception:
         print("None")
